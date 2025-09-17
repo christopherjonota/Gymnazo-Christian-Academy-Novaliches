@@ -9,3 +9,21 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+*{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+.hello{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
