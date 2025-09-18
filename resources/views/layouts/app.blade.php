@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @yield('styles')
 </head>
 <body>
     @include('partials.navbar') {{-- Reusable navbar --}}
