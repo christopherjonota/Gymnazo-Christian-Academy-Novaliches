@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\StudentLoginController;
+use App\Http\Controllers\Student\HomeController as StudentHomeController;
 
 Route::get('/', function () {
     return view('home');
@@ -26,5 +27,5 @@ Route::post('/student/logout', [StudentLoginController::class, 'login'])->name('
 Route::prefix('student')
     ->middleware('auth:student')
     ->group(function () {
-        Route::get('/home', [HomeController::class, 'index'])->name('student.home');
+        Route::get('/home', [StudentHomeController::class, 'index'])->name('student.home');
 });
