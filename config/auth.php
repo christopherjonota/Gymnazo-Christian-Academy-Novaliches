@@ -40,9 +40,9 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'students' => [
+        'student' => [
             'driver' => 'session',
-            'provider' => 'students',
+            'provider' => 'student',
         ]
     ],
 
@@ -68,7 +68,7 @@ return [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
-        'students' => [
+        'student' => [
             'driver' => 'eloquent',
             'model' => App\Models\Student::class,
         ]
