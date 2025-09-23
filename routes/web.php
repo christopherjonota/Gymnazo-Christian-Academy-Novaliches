@@ -22,12 +22,21 @@ Route::get('/about', [HomeController::class, 'index'])->name('about');
 
 
 Route::get('/student/login', [StudentLoginController::class, 'index'])
-->middleware('student.guest')
-->name('student.login');
+    ->middleware('student.guest')
+    ->name('student.login');
+
 Route::post('/student/login', [StudentLoginController::class, 'login'])->name('student.login.submit');
-Route::post('/student/logout', [StudentLoginController::class, 'login'])->name('student.login.logout');
+
+Route::post('/student/logout', function(){
+    Auth::guard('student')->logout();
+    request()->session()->invalidate();
+    request()->session()->regenerateToken();
+
+    return redirect()->route('student.login');
+})->name('student.logout');
+
 Route::prefix('student')
-    ->middleware('auth.student')
+    ->middleware('auth.student', 'prevent.back')
     ->group(function () {
         Route::get('/home', [StudentHomeController::class, 'index'])->name('student.home');
 });

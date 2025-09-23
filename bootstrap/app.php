@@ -13,7 +13,8 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias([
             'auth.student' => \App\Http\Middleware\AuthenticateStudent::class,
-            'student.guest' => \App\Http\Middleware\RedirectIfStudentAuthenticated::class
+            'student.guest' => \App\Http\Middleware\RedirectIfStudentAuthenticated::class,
+            'prevent.back' => \App\Http\Middleware\PreventBackHistory::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
