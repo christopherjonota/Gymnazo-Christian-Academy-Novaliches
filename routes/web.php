@@ -18,8 +18,14 @@ Route::get('/contact', function () {
 
 Route::get('/about', [HomeController::class, 'index'])->name('about');
 
-Route::get('/login/student', [StudentLoginController::class, 'index'])->name('student.login');
-
-
-
 Route::get('/student', [StudentLoginController::class, 'index'])->name('student');
+
+
+Route::get('/student/login', [StudentLoginController::class, 'index'])->name('student.login');
+Route::post('/student/login', [StudentLoginController::class, 'login'])->name('student.login.submit');
+Route::post('/student/logout', [StudentLoginController::class, 'login'])->name('student.login.logout');
+Route::prefix('student')
+    ->middleware('auth:student')
+    ->group(function () {
+        Route::get('/home', [HomeController::class, 'index'])->name('student.home');
+});
