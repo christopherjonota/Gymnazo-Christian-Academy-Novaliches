@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\StudentLoginController;
 
 Route::get('/', function () {
     return view('home');
@@ -16,3 +17,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/about', [HomeController::class, 'index'])->name('about');
+
+Route::get('/login/student', [StudentLoginController::class, 'index'])->name('student');
