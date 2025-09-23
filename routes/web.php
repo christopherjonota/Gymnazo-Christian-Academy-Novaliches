@@ -18,4 +18,8 @@ Route::get('/contact', function () {
 
 Route::get('/about', [HomeController::class, 'index'])->name('about');
 
-Route::get('/login/student', [StudentLoginController::class, 'index'])->name('student');
+Route::get('/login/student', [StudentLoginController::class, 'index'])->name('student.login');
+
+
+
+Route::get('/student', [StudentLoginController::class, 'index'])->name('student');

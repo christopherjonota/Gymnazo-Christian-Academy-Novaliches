@@ -12,7 +12,7 @@
                 <div class="services">
                     <a href="{{ route('about') }}">Services</a>
                     <div class="services-content">
-                        <a href="{{ route('student')}}">Student Portal</a>
+                        <a href="{{ route('student.login')}}">Student Portal</a>
                         <a href="#">Teacher Portal</a>
                         <a href="#">Parent Portal</a>
                         <a href="#">Alumni Portal</a>

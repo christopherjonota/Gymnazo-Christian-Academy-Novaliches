@@ -10,4 +10,19 @@ class StudentLoginController extends Controller
    public function index(){
         return view('auth\student-login');
     }
+    
+    public function login(Request $request){
+        $credentials = $request->only('email', 'password');
+        if(Auth::guard('student')->attempt($credentials)){
+            return redirect()->intended('/student');
+        }
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
+    }
+
+    public function logout(){
+        Auth::guard('student')->logout();
+        return redirect('/login/student');
+    }
 }
