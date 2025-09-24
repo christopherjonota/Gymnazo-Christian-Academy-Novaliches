@@ -21,19 +21,24 @@ Route::get('/about', [HomeController::class, 'index'])->name('about');
 
 
 
+// Student Login Form Route
 Route::get('/student/login', [StudentLoginController::class, 'index'])
     ->middleware('student.guest')
     ->name('student.login');
 
-Route::post('/student/login', [StudentLoginController::class, 'login'])->name('student.login.submit');
+//Login Route
+Route::post('/student/login', [StudentLoginController::class, 'login'])
+    ->name('student.login.submit');
 
+
+// Logout Route
 Route::post('/student/logout', function(){
     Auth::guard('student')->logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
-
     return redirect()->route('student.login');
-})->name('student.logout');
+})
+    ->name('student.logout');
 
 Route::prefix('student')
     ->middleware('auth.student', 'prevent.back')
