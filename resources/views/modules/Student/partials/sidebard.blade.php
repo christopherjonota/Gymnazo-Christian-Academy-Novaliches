@@ -1,6 +1,6 @@
 <div class="sidebar">
     <div class="profile">
-        <img src="{{ asset('images/student/boy.png') }}" alt="Profile Picture">
+        <img src="{{ asset('images/student/boy.png') }}" height="80px" width="80px" alt="Profile Picture">
         <h2>Christopher Jonota</h2>
         <p>23-1855</p>
     </div>
@@ -23,6 +23,13 @@
                 <img src="{{ asset('images/student/navigation/arrow_down.svg')}}" width=24 alt="home logo">
             </div>
         </div>
+        <div class="academic-dropdown">
+            <p>My Courses / Subjects</p>
+            <p>Class Schedule</p>
+            <p>Grades / Report Card</p>
+            <p>Attendance Record</p>
+            <p>Resources / Materials</p>
+        </div>
         <div class="transaction"> 
             <div>
                 <img src="{{ asset('images/student/navigation/communication_unselected.svg')}}" width=24 alt="home logo">
@@ -32,6 +39,10 @@
                 <img src="{{ asset('images/student/navigation/arrow_down.svg')}}" width=24 alt="home logo">
             </div>
         </div>
+        <div class="academic-dropdown">
+            <p>Announcements / Notices</p>
+            <p>Contact Directory</p>
+        </div>
         <div class="transaction">
             <div>
                 <img src="{{ asset('images/student/navigation/student_services_unselected.svg')}}" width=24 alt="home logo">
@@ -39,10 +50,15 @@
             </div>
             <div class="dropdown-arrow">
                 <img src="{{ asset('images/student/navigation/arrow_down.svg')}}" width=24 alt="home logo">
-            </div>
-           
+            </div>   
         </div>
-        <div class="transaction">
+        <div class="academic-dropdown">
+            <p>Downloads / Forms</p>
+            <p>Billing & Payments</p>
+            <p>Events & Activities</p>
+            <p>Help Desk / Support</p>
+        </div>
+        <div class="settings">
             <div>
                 <img src="{{ asset('images/student/navigation/settings_unselected.svg')}}" width=24 alt="home logo">
                 <p>Settings</p>
