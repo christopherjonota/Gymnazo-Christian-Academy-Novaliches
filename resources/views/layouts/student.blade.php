@@ -10,17 +10,7 @@
 <body>
     @include('modules.student.components.topbar')
     <div class="layout-container">
-        <div class="sidebar">
-            <div class="home">
-                <h2>Profile Summary</h2>
-            </div>
-            <div class="transaction">
-                <h2>Class Schedule</h2>
-            </div>
-            <div class="transaction">
-             <h2>Academic Overview</h2>
-            </div>
-        </div>
+        @include('modules.student.partials.sidebard')
         <main>
             @yield('content')
         </main>
