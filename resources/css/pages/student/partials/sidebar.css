@@ -41,6 +41,7 @@
 }
 .sidebar-navigations{
     width: 96%;
+    height: 100%;
     font-family: 'Poppins Medium';
     font-size: 16px;
     display: flex;
@@ -49,25 +50,32 @@
     gap: 10px;
 }
 .sidebar-navigations div{
-    width: 90%;
+    height: 48px;
+    width: 96%;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
-    padding: 10px 10px;
     border-radius: 8px;
+
 }
-.sidebar-navigations div div{
+.sidebar-navigations div div:nth-child(1){
+    height: 100%;
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: start;
     cursor: pointer;
-    padding: 0px;
     border-radius: 8px;
+    margin-left: 10px;
 }
 .divider{
     border-bottom: 1px solid gray;
+    width: 100%;
     margin-bottom: 20px;
 }
-
+.sidebar-navigations div .dropdown-arrow{    
+    width: 20%;
+}
