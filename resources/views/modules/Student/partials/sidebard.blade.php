@@ -21,6 +21,7 @@
             <p>Communication</p>
         </div>
         <div class="transaction">
+            <img src="{{ asset('images/student/navigation/services_not_selected.svg')}}" width=24 alt="home logo">
             <p>Student Services</p>
         </div>
         <div class="transaction">
