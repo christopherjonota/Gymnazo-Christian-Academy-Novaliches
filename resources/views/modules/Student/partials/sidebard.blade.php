@@ -1,6 +1,6 @@
 <div class="sidebar">
     <div class="profile">
-        <img src="{{ asset('images/student/boy.png') }}" height="80px" width="80px" alt="Profile Picture">
+        <img src="{{ asset('images/student/boy.png') }}" height="100px" width="100px" alt="Profile Picture">
         <h2>Christopher Jonota</h2>
         <p>23-1855</p>
     </div>
