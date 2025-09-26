@@ -30,7 +30,6 @@ Route::get('/student/login', [StudentLoginController::class, 'index'])
 Route::post('/student/login', [StudentLoginController::class, 'login'])
     ->name('student.login.submit');
 
-
 // Logout Route
 Route::post('/student/logout', function(){
     Auth::guard('student')->logout();
@@ -40,6 +39,7 @@ Route::post('/student/logout', function(){
 })
     ->name('student.logout');
 
+// Student Protected Routes
 Route::prefix('student')
     ->middleware('auth.student', 'prevent.back')
     ->group(function () {

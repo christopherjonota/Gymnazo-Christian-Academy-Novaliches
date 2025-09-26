@@ -1,3 +1,7 @@
+// components css
+import '../../../css/pages/student/components/topbar.css';
+
+
 document.querySelector('.home').addEventListener('click', function() {
     window.location.href = '/student/home';
 });

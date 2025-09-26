@@ -1,9 +1,11 @@
 @extends('layouts.student')
-
+@section('styles')
+    @vite('resources/css/pages/student/home.css')
+@endsection
 @section('content')
-    <h1>Hahahhahah</h1>
-    <form action="{{ route('student.logout') }}" method="post">
-        @csrf
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
+
+    <div class="home-content">
+        <h1>Welcome to Student Portal</h1>
+    </div>
+
 @endsection

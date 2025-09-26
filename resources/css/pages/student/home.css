@@ -1,0 +1,9 @@
+.home-content{
+    width: 100%;
+    height: 160px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
