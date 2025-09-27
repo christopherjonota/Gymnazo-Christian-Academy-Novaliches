@@ -44,4 +44,6 @@ Route::prefix('student')
     ->middleware('auth.student', 'prevent.back')
     ->group(function () {
         Route::get('/home', [StudentHomeController::class, 'index'])->name('student.home');
-});
+        Route::get('/billing', [StudentHomeController::class, 'billing'])->name('student.billing');
+
+    });

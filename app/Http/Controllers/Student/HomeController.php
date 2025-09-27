@@ -15,4 +15,7 @@ class HomeController extends Controller
     {
         return view('modules.student.studentHome');
     }
+    public function billing(){
+        return view('modules.student.payment');
+    }
 }

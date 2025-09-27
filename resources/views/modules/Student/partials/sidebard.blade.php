@@ -53,15 +53,15 @@
             </div>   
         </div>
         <div class="academic-dropdown">
-            <p>Downloads / Forms</p>
-            <p>Billing & Payments</p>
+            <a href="">Downloads / Forms</a>
+            <a href="{{ route('student.billing') }}">Billing & Payments</a>
             <p>Events & Activities</p>
             <p>Help Desk / Support</p>
         </div>
         <div class="settings">
             <div>
                 <img src="{{ asset('images/student/navigation/settings_unselected.svg')}}" width=24 alt="home logo">
-                <p>Settings</p>
+                <a href="{{ route('student.billing') }}">Settings</a>
             </div>
             
         </div>

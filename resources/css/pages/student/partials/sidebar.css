@@ -57,7 +57,10 @@
     justify-content: center;
     cursor: pointer;
     border-radius: 8px;
-
+}
+.sidebar-navigations div a{
+    text-decoration: none;
+    color: black;
 }
 .sidebar-navigations div div:nth-child(1){
     display: flex;
@@ -91,12 +94,14 @@
 .sidebar-navigations .academic-dropdown .active{
     background-color: red;
 }
-.sidebar-navigations .academic-dropdown p{
+.sidebar-navigations .academic-dropdown a, .sidebar-navigations .academic-dropdown p{
     margin: 0;
     width: 80%;
     height: 40px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: black;
 
 }
 .logout-button{
