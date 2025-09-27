@@ -102,3 +102,7 @@
 .logout-button{
     margin-bottom: 40px;
 }
+.profile p:nth-of-type(1){
+    margin-top:10px;
+    font-size: 20px;
+}

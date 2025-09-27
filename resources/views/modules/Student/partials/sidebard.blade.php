@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="profile">
         <img src="{{ asset('images/student/boy.png') }}" height="100px" width="100px" alt="Profile Picture">
-        <h2>Christopher Jonota</h2>
+        <p>Christopher Jonota</p>
         <p>23-1855</p>
     </div>
     <div class="divider">
