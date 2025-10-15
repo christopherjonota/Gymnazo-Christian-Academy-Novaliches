@@ -17,10 +17,13 @@ body{
     display: flex;
     flex-direction: row;
 }
+.sidebar-container{
+    width: 20%;
+}
 main{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;

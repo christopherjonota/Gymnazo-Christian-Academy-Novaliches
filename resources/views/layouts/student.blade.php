@@ -10,8 +10,11 @@
 <body>
     @include('modules.student.components.topbar')
     <div class="layout-container">
-        @include('modules.student.partials.sidebard')
-        <main>
+        <div class="sidebar-container">
+            @include('modules.student.partials.sidebard')
+       
+        </div>
+         <main>
             @yield('content')
         </main>
     </div>

@@ -30,10 +30,23 @@
             <p>Attendance Record</p>
             <p>Resources / Materials</p>
         </div>
-        <div class="transaction"> 
+        <div class="academic"> 
             <div>
                 <img src="{{ asset('images/student/navigation/communication_unselected.svg')}}" width=24 alt="home logo">
                 <p>Communication</p>
+            </div>
+            <div class="dropdown-arrow">
+                <img src="{{ asset('images/student/navigation/arrow_down.svg')}}" width=24 alt="home logo">
+            </div>
+        </div>
+        <div class="academic-dropdown">
+            <p>Announcements / Notices</p>
+            <p>Contact Directory</p>
+        </div>
+        <div class="transaction"> 
+            <div>
+                <img src="{{ asset('images/student/navigation/communication_unselected.svg')}}" width=24 alt="home logo">
+                <p>Student Profile</p>
             </div>
             <div class="dropdown-arrow">
                 <img src="{{ asset('images/student/navigation/arrow_down.svg')}}" width=24 alt="home logo">
